@@ -32,9 +32,9 @@ class App {
 
     this.polygon = new Polygon(
       this.stageWidth / 2,
-      this.stageHeight / 2,
-      this.stageHeight / 3,
-      3
+      this.stageHeight + this.stageHeight / 4,
+      this.stageHeight / 1.5,
+      15
     );
   }
 
@@ -53,7 +53,7 @@ class App {
 
   onMove(e) {
     if (this.isDown) {
-      this.movex = e.clientX - this.offsetX;
+      this.moveX = e.clientX - this.offsetX;
       this.offsetX = e.clientX;
     }
   }
