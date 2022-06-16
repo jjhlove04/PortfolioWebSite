@@ -8,11 +8,26 @@
       content="width=device-width, initial-scale=1,
     maximum-scale=1, user-scalable=0"
     />
-    <title></title>
+    <title>정진효 · JinHyo · Unity, C#, PortfolioWebSite</title>
     <link rel="stylesheet" href="style.css" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <body>
     <script type="module" src="app.js"></script>
+    <img id="mainLogo" src="../PortfolioWebSite/mainLogo.png">
+    <input type="checkbox" id="menuicon">
+    <label for="menuicon">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+    <div class="container">
+      <div class="sidebar">
+        <span class="area_desc">
+          sidebar영역
+        </span> 
+      </div>
+    </div>
+
     <div class="textWrap">
         <div class="textContainer">
           <h1>
@@ -21,25 +36,46 @@
           <h1 class="textLeft">
             <span>정진효.</span>
           </h1>
+          <div class="Line"></div>
           <h5 class="subText">안녕하세요, 유니티 클라이언트 개발자를 꿈꾸는 정진효입니다.</h5>
+          <h5 class="subText"><span>자신을 돌아보며 가장 현명한 선택을 하고, 항상 배우려는 자세로 임하겠습니다.</span></h5>
         </div>
       </div>
-      <
 
+      <div class="content-container">
+        <div class="left-section">
+          <div class="title">
+            <div id="techStack"><span>Tech Stack</span></div>    
+          </div>
+          <div class="wrap">
+            <h1>
+              <span class="material-icons">
+                language
+                </span>
+            </h1>
+            <p id="dynamic" class="lg-text"> 
+              
+            </p>
+            <p class="sm-text">
+              1 Day | 1 Commit
+            </p>
+          </div>
+        </div>  
+        <!-- end of left section -->
 
-      <div class="wrap">
-        <h1>
-          <span class="material-icons">
-            language
-            </span>
-        </h1>
-        <p id="dynamic" class="lg-text"> 
-          
-        </p>
-        <p class="sm-text">
-          1 Day | 1 Commit
-        </p>
+        <div class="right-section">
+          <div class="banner">
+            
+              <img src="../PortfolioWebSite/Project1.png" width="300px" height="200" ></a>
+            <span class="text"><a href="https://github.com/jjhlove04/MakeSwordGame" style="color:white">Working Projecet</span></a>
+          </div>
+        </div>
+        <!-- end of right section -->
+
       </div>
+
+      
+      
       <script src="main.js"></script> 
   </body>
 </html>
