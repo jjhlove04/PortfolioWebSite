@@ -209,10 +209,13 @@ input[id="menuicon"]:checked ~ .container .sidebar {
 
 .area_desc {
   position: absolute;
+  font-family: "Montserrat", sans-serif;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 20px;
+  font-size: 25px;
+  transform: rotate(-90deg);
+  margin-top: 450px;
 }
 .container {
   width: 100%;
