@@ -99,13 +99,14 @@ body {
   transition: all 0.8s;
 }
 .banner::before {
-  border-top: 2px solid#fff;
-  border-bottom: 2px solid#fff;
+  border-top: 5px solid#fff;
+  border-bottom: 5px solid#fff;
+
   width: 0;
 }
 .banner::after {
-  border-left: 2px solid#fff;
-  border-right: 2px solid#fff;
+  border-left: 5px solid#fff;
+  border-right: 5px solid#fff;
   height: 0;
 }
 
@@ -206,17 +207,48 @@ input[id="menuicon"]:checked ~ .container .sidebar {
   right: 0;
   z-index: 20;
 }
-
+/*사이드 배너 관련 텍스트*/
 .area_desc {
-  position: absolute;
-  font-family: "Montserrat", sans-serif;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 25px;
-  transform: rotate(-90deg);
-  margin-top: 450px;
+  display: block;
+  position: relative;
+  top: 30%;
 }
+.colors {
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  left: 20%;
+  top: 20%;
+  text-decoration-line: none;
+  color: #8e8e8e;
+}
+.colors a {
+  position: relative;
+  z-index: 2;
+}
+.colors::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #e1dfc3;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  transition: all 0.35s;
+  z-index: 1;
+}
+.colors::after {
+  content: "";
+}
+.area_desc:hover .colors::before {
+  left: 0;
+}
+
+/*사이드 배너 관련 텍스트 끝*/
+
 .container {
   width: 100%;
   position: relative;
@@ -224,6 +256,7 @@ input[id="menuicon"]:checked ~ .container .sidebar {
 .container .sidebar {
   position: fixed;
   top: 0;
+  margin: 0, auto;
   right: -350px;
   width: 350px;
   height: 100%;
@@ -266,4 +299,13 @@ canvas {
   .content-cotnainer > .right-section {
     margin-top: 20px;
   }
+}
+
+.profile-container {
+  width: 800px;
+  margin: 100px auto;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  background-color: #b09b71;
 }
