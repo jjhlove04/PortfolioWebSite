@@ -300,12 +300,206 @@ canvas {
     margin-top: 20px;
   }
 }
-
+/*프로필 컨테이너*/
 .profile-container {
   width: 800px;
   margin: 100px auto;
   height: 500px;
   display: flex;
-  justify-content: center;
-  background-color: #b09b71;
+  position: relative;
 }
+.profile-text {
+  position: absolute;
+  top: 30px;
+  left: 20px;
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serifs;
+  font-weight: bold;
+}
+.profile-image {
+  position: absolute;
+  width: 300px;
+  height: 350px;
+  transform-origin: center center;
+  top: 20%;
+  left: 0px;
+  border-radius: 10%;
+}
+.profile-award {
+  position: absolute;
+  width: 450px;
+  height: 250px;
+  margin: 100px 340px;
+}
+.profile-award span {
+  display: block;
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serifs;
+  font-weight: bold;
+}
+.profile-award span.subTitle {
+  font-size: 28px;
+  margin-top: 10px;
+}
+.profile-award span.subText {
+  margin-top: 5px;
+  font-size: 20px;
+}
+.profile-award span.description {
+  font-size: 30px;
+  margin-top: 10px;
+}
+.profile-award span.pro-text {
+  margin-top: 10px;
+  font-size: 20px;
+  color: #ad8b73;
+}
+/* 프로필^ */
+.project-maincontainer {
+  width: 800px;
+  height: 50px;
+  margin: -90px auto;
+}
+.project-maincontainer .project-mainTitle {
+  font-weight: bold;
+  font-size: 40px;
+}
+.project-maincontainer .project-mainTitle span {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/*프로젝트 컨테이너*/
+.project-container {
+  margin: 100px auto;
+  display: flex;
+  width: 800px;
+  justify-content: space-between;
+}
+.project-container-left {
+  position: relative;
+  border-radius: 3%;
+  width: 380px;
+  height: 600px;
+  background-color: #ad8b73;
+}
+
+.project-container-left span.project-name {
+  position: absolute;
+  font-size: 30px;
+  white-space: nowrap;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.project1-img {
+  position: absolute;
+  top: 12%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 2%;
+}
+.textArea span.main-text {
+  position: absolute;
+  white-space: nowrap;
+  font-size: 17px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.textArea span.mainIntro-text {
+  position: absolute;
+  flex-wrap: wrap;
+  font-weight: bold;
+  margin: -20px 40px;
+  top: 60%;
+}
+#working {
+  position: absolute;
+  font-size: 20px;
+  font-weight: bold;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 70%;
+}
+.worklist {
+  font-size: 20px;
+  font-weight: bold;
+
+  white-space: nowrap;
+  position: absolute;
+  top: 78%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.worklist ul {
+  margin-top: 10px;
+}
+/*프로젝트 패널 오른쪽*/
+.project-container-right {
+  position: relative;
+  border-radius: 3%;
+  width: 380px;
+  height: 700px;
+  background-color: #ad8b73;
+}
+.project-container-right span.project-name {
+  position: absolute;
+  font-size: 30px;
+  white-space: nowrap;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.project2-img {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 2%;
+}
+.textAreaR span.main-textR {
+  position: absolute;
+  white-space: nowrap;
+  font-size: 17px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  top: 43%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.textAreaR span.mainIntro-textR {
+  position: absolute;
+  flex-wrap: wrap;
+  font-weight: bold;
+  margin: -20px 40px;
+  top: 53%;
+}
+#workingR {
+  position: absolute;
+  font-size: 20px;
+  font-weight: bold;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 63%;
+}
+.worklistR {
+  font-weight: bold;
+  font-size: 20px;
+  white-space: nowrap;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.worklistR ul {
+  margin-top: 5px;
+}
+/*오른쪽 프로젝트 배너 끝*/
